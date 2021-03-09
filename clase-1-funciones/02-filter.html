@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programación Funcional Filter</title>
+  </head>
+  <body>
+    <h1>Programación Funcional Filter</h1>
+    <p>
+      El metodo filter es inmutable, quiere decir no va a cambiar el contenido
+      del array original, el resultado de filter devuelve un array con la misma
+      cantidad de elementos o menor.
+    </p>
+
+    <script>
+      console.log("Tema: Metodo Filter");
+
+      // Programación imperativa
+      // for, while, do..while
+
+      const numeros = [1, 2, 3, 4, 5];
+
+      // for (let i = 0; i < numeros.length; i++) {
+      //   console.log(numeros[i]);
+      // }
+
+      let Array1 = function (numeros) {
+        let newArray = [];
+        for (let i = 0; i < numeros.length; i++) {
+          if (numeros[i] > 3) {
+            newArray.push = numeros[i];
+          }
+        }
+        return newArray;
+      };
+
+      console.log(Array1(numeros));
+
+      // funcional
+      //console.clear();
+      //numeros.forEach((numero) => console.log(numero));
+      let numerosMayoresATres = numeros.filter((numero) => numero > 3);
+      console.log(numerosMayoresATres);
+
+      const personas = [
+        { nombre: "Carlos Guzman", edad: 37, sexo: "M" },
+        { nombre: "Yesica Prieto", edad: 34, sexo: "F" },
+        { nombre: "Sebastian Diaz", edad: 26, sexo: "M" },
+        { nombre: "Alejandro Mosquera", edad: 30, sexo: "M" },
+      ];
+
+      //console.log(personas.filter());
+
+      console.clear();
+      let objTest = {
+        metodo1: function () {
+          setTimeout(function () {
+            console.log(this);
+            this.metodo2();
+          }, 1000);
+        },
+
+        metodo2: function () {
+          console.log("Hacer algo");
+        },
+      };
+
+      objTest.metodo1();
+    </script>
+  </body>
+</html>

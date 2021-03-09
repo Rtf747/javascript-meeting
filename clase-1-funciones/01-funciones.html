@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones JavaScript</title>
+  </head>
+  <body>
+    <h1>Funciones JavaScript</h1>
+    <p></p>
+
+    <script>
+      console.log("Tema: Funciones en JavaScript");
+
+      // var, let y const
+      // hoisting
+      var apellido = "Guzmann";
+
+      // Funciones declaradas
+      function miFuncion(parametro1, apellido) {
+        var apellido = "Giraldo";
+        // bloque
+        return parametro1 + " " + apellido;
+      }
+
+      console.log(apellido);
+      console.log(miFuncion("Carlos", apellido));
+
+      // Funciones expresadas
+
+      let miVar = function () {
+        return "Mi funcion anonima";
+      };
+
+      // Casos de funciones recursivas
+      let miFac = function fac(n) {
+        return n < 2 ? 1 : n * fac(n - 1);
+      };
+
+      let operadores = function (x) {
+        return;
+        x == "algo" ? true : x > 5 ? 5 : "Ingresaste un número errado";
+      };
+      console.log(miFac(5));
+
+      // arrow function
+      // fat arrow
+      console.clear();
+      let arrowFunction = (cadena) => {
+        return cadena;
+      };
+
+      // Implicitamente el return
+      let arrowFunction1 = (cadena) => {
+          return cadena;
+      }
+
+      console.log(arrowFunction1("Hola desde una funcion flecha"));
+    </script>
+  </body>
+</html>
