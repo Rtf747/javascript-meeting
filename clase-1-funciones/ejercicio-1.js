@@ -75,4 +75,8 @@ const personas = [
   }
   // -----------------end Victor's contribution-------------
 
+  // -------- solucion de Stunk -----------------
+
+  const result = personas.filter(persona => persona.idiomas[0] === "EN")
+  result.forEach((edades) => console.log(edades.edad));
   
