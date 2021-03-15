@@ -20,3 +20,30 @@ console.log(strDivider(str1));*/
 const repeatTimes= 3
 let strRepeting =(str)=>{return str.repeat(repeatTimes)}
 console.log(strRepeting(str1))
+
+// -----------Rumer First----------//
+
+let saludo = function(n){
+    return n.length
+  };
+  console.log(saludo("hola mundo"));
+
+//-----------Rumer Second ---------//
+
+let recortar = function(n,m){
+    return n.slice(m)
+  }
+  console.log(recortar("hola que tal", 3));
+
+//----------Rumer third ---------------//
+
+let separador = function(n,m){
+    return n.split(m)
+  }
+  console.log(separador('hola que tal', ' ' )); 
+
+//----------Rumer fourth ---------------//
+let repetidor = function(n,m){
+    return n.repeat(m)
+  }
+  console.log(repetidor('hola que tal ', 4 )); 
